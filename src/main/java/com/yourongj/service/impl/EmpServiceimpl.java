@@ -19,4 +19,14 @@ public class EmpServiceimpl implements EmpService {
         employDao.saveEmploy(employ);
 
     }
+
+    public int delete(int id) {
+        employDao.delete(id);
+        return 0;
+    }
+
+    public int update(Employ employ) {
+        employDao.update(employ);
+        return 0;
+    }
 }
